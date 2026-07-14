@@ -1,0 +1,29 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    padding: 8px;
+    color: #ffeed7;
+    background-color: #a07133;
+}
+
+#header {
+    padding: 20px;
+    text-align: center;
+    background-color: #24659b;
+}
+
+#header img {
+    margin: 0;
+    width: 120px;
+}
+
+ul span {
+    color: #9b0404;
+}
+
+pre {
+    padding: 30px 0;
+    background-color: beige;
+}

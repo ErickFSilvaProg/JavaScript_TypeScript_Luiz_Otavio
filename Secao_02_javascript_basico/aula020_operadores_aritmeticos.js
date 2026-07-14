@@ -11,8 +11,8 @@
         +  ............... → Adição ou concatenação
         -  ............... → Subtração
         <, <=, >, >=  .... → Comparadores Relacionais
-        ==, !=, ===, !==   → Igualdade e Desigualdade
-        (E / OU): &&, ||   → Lógicos
+        ==, !=, ===, !== . → Igualdade e Desigualdade
+        &&, || ........... → (E / OU): Lógicos
         =, +=, -=, *=, /=  → Atribuição
 
     Obs.: Quando operadores têm a mesma precedência (ex: multiplicação e divisão), a regra de associatividade entra em ação, sendo geralmente avaliados da esquerda para a direita.

@@ -9,3 +9,6 @@ if (addUpNumbers) {
 
     alert(`Summed value: ${totalValue}`);
 }
+else {
+    alert('So, bye!');
+}

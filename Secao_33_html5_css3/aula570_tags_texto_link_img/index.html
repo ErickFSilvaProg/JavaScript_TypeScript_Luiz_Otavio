@@ -7,65 +7,49 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tags HTML</title>
     <!-- CSS -->
-    <style>
-        h1 {
-            padding: 8px;
-            color: #ffeed7;
-            background-color: #a07133;
-        }
-
-        img {
-            width: 300px;
-        }
-
-        span b {
-            font-size: 23px;
-            color: #24659b;
-        }
-
-        pre {
-            padding: 30px 0;
-            background-color: beige;
-        }
-    </style>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
     <div class="container">
 
+        <div id="header">
+            <img src="../../imagens/dev_web.jpg" alt="dev_web">
+        </div>
+
         <h1>Lorem ipsum</h1>
         <p>
             <strong>Lorem ipsum</strong> dolor sit amet consectetur adipisicing elit. Amet cupiditate autem sit cum sed.
-            <b>Nesciunt ipsum</b> delectus dignissimos unde eaque <i>molestiae, quo at eligendi mollitia</i> dolore
+            <em>Nesciunt ipsum</em> delectus dignissimos unde eaque molestiae, quo at eligendi mollitia dolore
             officiis impedit a nemo.
         </p>
-        <p>
-            <a href="https://www.lipsum.com/">
-                <em>Lorem ipsum dolor sit.</em>
-            </a>
-        </p>
 
-        <p>
-            <img src="../imagens/js-ts.png" alt="js-ts"><br>
-            <span><b>JavaScript | TypeScript</b></span>
-        </p>
+        <h2>
+            Lorem ipsum dolor sit.
+        </h2>
+        <ul>
+            <li><span>Lorem ipsum</span> dolor sit amet.</li>
+            <li><a href="https://www.lipsum.com/" target="_blank">Lorem ipsum dolor sit amet consectetur.</a></li>
+        </ul>
 
         <hr>
 
         <blockquote cite="https://www.lipsum.com/">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium minima neque doloremque aut commodi
-            culpa minus ipsam? Tenetur ipsa ullam soluta doloremque animi, corporis voluptas nulla temporibus id fugit
-            cupiditate.
+            <b>Lorem ipsum</b>, <i>dolor sit amet <sup>(lorem ipsum)</sup> consectetur adipisicing elit</i>.
+            <br>Accusantium minima neque doloremque aut commodi culpa minus ipsam? Tenetur ipsa ullam <del>soluta</del>
+            doloremque animi, corporis voluptas nulla temporibus id fugit cupiditate.
         </blockquote>
 
         <hr>
 
-        Código em javascript:
-        <pre>
-            <code>
-                console.log();
-            </code>
-        </pre>
+        <div>
+            Código em javascript:
+            <pre>
+                <code>
+                    console.log();
+                </code>
+            </pre>
+        </div>
 
     </div>
 </body>
