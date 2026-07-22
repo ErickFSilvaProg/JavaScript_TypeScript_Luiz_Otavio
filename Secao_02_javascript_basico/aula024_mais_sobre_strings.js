@@ -49,6 +49,7 @@ console.log();
 // Pesquisar com expressões regulares:
 console.log(umaString.match(/[a-z]/g)); // Retorna todas as letras "minúsculas".
 console.log(umaString.search(/[a-z]/));
+console.log();
 
 
 // Substituir palavras com, ou sem, expressões regulares:
@@ -78,15 +79,12 @@ console.log();
 
 
 // Formatando o string para letras maiúsculas:
-console.log(umaString.to);
-console.log();
-
-
-// Formatando o string para letras maiúsculas:
+console.log(umaString.toUpperCase());
 console.log(outraString.toUpperCase());
 console.log();
 
 
 // Formatando o string para letras minúsculas:
+console.log(umaString.toLowerCase());
 console.log(outraString.toLowerCase());
 console.log();
