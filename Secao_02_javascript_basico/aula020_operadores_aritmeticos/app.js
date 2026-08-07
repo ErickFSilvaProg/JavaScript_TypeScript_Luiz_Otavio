@@ -2,13 +2,13 @@
     — Operadores aritméticos:
 
         () ............... → Parênteses
-        ++ ............... → Incremento 
+        ++ ............... → Incremento
         -- ............... → Decremento
         ** ............... → Potenciação
         *  ............... → Multiplicação
         /  ............... → Divisão
         %  ............... → Módulo (resto da divisão)
-        +  ............... → Adição ou concatenação
+        +  ............... → Adição (também realiza a concatenação)
         -  ............... → Subtração
         <, <=, >, >=  .... → Comparadores Relacionais
         ==, !=, ===, !== . → Igualdade e Desigualdade

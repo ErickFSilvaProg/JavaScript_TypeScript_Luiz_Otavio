@@ -1,20 +1,19 @@
-let numero = Number(prompt('Digite um número'));
-
-let numeroTitulo = document.getElementById('numero-titulo');
-let texto = document.getElementById('texto');
-
-if (numero != null) {
-    // numero = Number(numero);
-
-    numeroTitulo.innerHTML = numero;
-    texto.innerHTML = `
-        <p>Raiz quadrada: <b>${(numero ** 0.5)}</b></p>
-        <p>${numero} é inteiro: <b>${Number.isInteger(numero)}</b></p>
-        <p>É NaN <b>${Number.isNaN(numero)}</b></p>
-        <p>Arredondando para baixo: <b>${Math.floor(numero)}</b></p>
-        <p>Arredondar para cima: <b>${Math.ceil(numero)}</b></p>
-        <p>Com duas casas decimais: <b>${numero.toFixed(2)}</b></p>
-    `;
-}
+// Entrada do usuário:
+const numero = Number(prompt('Digite um número:'));
 
 
+// Recupera os campos da página:
+const numeroTitulo = document.getElementById('numero-titulo');
+const texto = document.getElementById('texto');
+
+
+// 
+numeroTitulo.innerHTML = numero;
+texto.innerHTML = `
+    <p>Raiz quadrada: ${numero ** 0.5}</p>
+    <p>${numero} é inteiro?: ${Number.isInteger(numero) ? 'Sim, é inteiro': 'Não, não é inteiro'}</p>
+    <p>É NaN?: ${Number.isNaN(numero) ? 'Sim, não é um número' : 'Não, é um número'}</p>
+    <p>Arredondando para baixo: ${Math.floor(numero)}</p>
+    <p>Arredondando para cima: ${Math.ceil(numero)}</p>
+    <p>Com duas casas decimais: ${numero.toFixed(2)}</p>
+`;

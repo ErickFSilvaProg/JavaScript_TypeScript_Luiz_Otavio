@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+    <!-- Bootstrap 5.3.8 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <div class="container">
+    
+        <header>
+            <h1>
+                Const com valores mutáveis
+            </h1>
+        </header>
+
+        <article>
+            <h2>
+                • Diferenças:
+            </h2>
+
+            <p>
+                <span class="destaque">const</span> descreve uma variável que não pode ser reatribuída (com o operador de atribuição =). Depois de criá-la, não podemos fazer algo assim:
+            </p>
+            <p>
+                <code><span class="destaque-code">const</span> nome = 'luiz';</code>
+                <code>nome = 'joão'; // Erro: Assignment to constant variable.</code>
+            </p>
+            <p>
+                Porém, existe uma diferença entre variável e valor.
+            </p>
+            <p>
+                Variáveis são como um apelido para um valor, uma espécie de alias para mencionar algum valor salvo na memória.
+            </p>
+            <p>
+                Já valores são os dados que realmente ficam salvos na memória e sustentam determinado tipo. Alguns tipos de valores são imutáveis, como <span class="destaque">number</span>, <span class="destaque">string</span>, <span class="destaque">boolean</span>, <span class="destaque">undefined</span>, <span class="destaque">null</span>, <span class="destaque">symbol</span> e <span class="destaque">bigint</span> (os primitivos todos são imutáveis). Outros tipos são mutáveis, como arrays e objetos (objetos em geral são mutáveis, com exceção de <span class="destaque">null</span>).
+            </p>
+            <p>
+                Valores mutáveis geralmente são estruturas de dados mais complexas que sustentam outros valores ou comportamentos internamente. Como é o caso do array, que pode ser composto por vários outros tipos de dados.
+            </p>
+            <p>
+                Quando usamos <span class="destaque">const</span> com tipos primitivos, esse valor nunca mais poderá ser alterado. Nesse caso, além de <span class="destaque">const</span> não permitir reatribuição, o valor também é imutável (consequentemente, nunca podemos alterar essa constante).
+            </p>
+            <p>
+                Já quando usamos <span class="destaque">const</span> com valores mutáveis (como arrays e objetos), a variável continua sendo constante, porém os valores dentro do objeto poderão ser alterados. Isso acontece porque quando alteramos um valor interno de um objeto, não ocorre a reatribuição da variável com sinal de atribuição = (a variável continua apontando para o mesmo local na memória), apenas a alteração de um valor interno do mesmo objeto.
+            </p>
+            <p>
+                Por este motivo, pode-se usar <span class="destaque">const</span> com objetos mutáveis e ainda assim alterar seus valores internos. A única coisa que não vamos conseguir fazer é reatribuir o valor da variável.
+            </p>
+            <h2>
+                • Exemplos:
+            </h2>
+            <p>
+                Isso pode ↴
+            </p>
+            <p>
+                <code><span class="destaque-code">const</span> array = [1, 2, 3, 4, 5];</code>
+                <code>array.pop();</code>
+                <code>array[0] = 1024;</code>
+                <code>console.log(array); // [ 1024, 2, 3, 4 ]</code>
+            </p>
+            <p>
+                Isso NÃO pode ↴
+            </p>
+            <p>
+                <code><span class="destaque-code">const</span> array = [1, 2, 3, 4, 5];</code>
+                <code>array = 'Legal'; // Assignment to constant variable.</code>
+            </p>
+        </article>
+    
+    </div>
+</body>
+
+</html>

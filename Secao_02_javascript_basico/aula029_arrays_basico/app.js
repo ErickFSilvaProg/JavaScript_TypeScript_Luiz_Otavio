@@ -37,7 +37,7 @@ console.log(alunos.length);
 console.log();
 
 
-// Faviar os índices do array:
+// Fatiar os índices do array:
 console.log(alunos.slice(0, 3)); // O último índice não será considerado.
 console.log(alunos.slice(0, -1)); // Recupera os índices desconsiderando o último.
 console.log();

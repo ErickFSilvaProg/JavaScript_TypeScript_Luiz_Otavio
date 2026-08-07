@@ -47,7 +47,7 @@ console.log();
 // Gerar números aleatórios entre 0 e 1, sendo que o número 1 não será incluído:
 console.log(Math.random());
 console.log(Math.random() * (10 - 5) + 5);
-console.log(Math.round(Math.random() * (10 - 5) + 5)); // Número entre 10 (máximo) e 5 (mínimo).
+console.log(Math.round(Math.random() * (10 - 1) + 1)); // Número entre 10 (máximo) e 1 (mínimo).
 console.log();
 
 
@@ -64,6 +64,7 @@ console.log();
 
 // Raiz quadrada:
 console.log(num4 ** 0.5);
+console.log(Math.sqrt(81));
 console.log();
 
 
