@@ -11,10 +11,13 @@
     "code-runner.runInTerminal": true,
     "code-runner.executorMap": {
         "javascript": "clear ; node",
-        "typescript": "clear ; ts-node"
+        "typescript": "clear ; ts-node",
+        "sass": "clear ; sass --style expanded",
+        "scss": "clear ; scss --style expanded"
     },
 	"liveServer.settings.CustomBrowser": "firefox",
     "liveServer.settings.donotShowInfoMsg": true,
     "git.autofetch": true,
-    "workbench.colorTheme": "Dark Modern"
+    "workbench.colorTheme": "Dark Modern",
+    "explorer.confirmDragAndDrop": false
 }
