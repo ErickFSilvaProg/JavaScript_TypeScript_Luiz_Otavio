@@ -1,0 +1,27 @@
+header {
+    padding: 30px;
+    color: rgb(255, 255, 245);
+    background-color: rgb(160, 117, 8);
+}
+
+article {
+    padding: 30px 0;
+}
+
+article h2 {
+    margin-bottom: 10px;
+    font-size: 1.4em;
+}
+
+article #text {
+    padding: 10px;
+    width: 100%;
+    max-width: 600px;
+    border: 1px solid gainsboro;
+    font-size: 1.1em;
+}
+
+article p {
+    margin: 0;
+    padding: 0;
+}

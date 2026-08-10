@@ -7,7 +7,7 @@ const numeroTitulo = document.getElementById('numero-titulo');
 const texto = document.getElementById('texto');
 
 
-// 
+// Inserindo informações na página:
 numeroTitulo.innerHTML = numero;
 texto.innerHTML = `
     <p>Raiz quadrada: ${numero ** 0.5}</p>
