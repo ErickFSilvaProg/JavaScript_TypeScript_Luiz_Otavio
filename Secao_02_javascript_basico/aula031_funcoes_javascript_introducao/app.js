@@ -14,6 +14,8 @@
                 ↪ Retorna o erro: SyntaxError: Identifier 'profissao' has already been declared
             Não utilize "var" para criar variáveis, utilize "let";
 
+        A função escerra sua operação após a execução para palavra "return". Nada será executado após o "return".
+
 */
 
 
@@ -44,9 +46,32 @@ console.log(variavel);
 
 // ● Função simples - Recebe e soma dois valores:
 function soma(x,y) {
-    return resultado = x + y;
+    // Constante protegida pelo escopo da função.
+    const resultado = x + y;
+    return resultado;
 }
 
-console.log(soma(2, 2));
-console.log(soma(33, 6));
-console.log(soma(10, 43));
+// Além desta, não existe outra constante "resultado" no escopo global.
+const resultado = soma(10, 30);
+console.log(resultado);
+
+
+// ● Executar uma função sem enviar argumentos retornará um "NaN".
+function soma2(x,y) {
+    return x + y;
+}
+
+const resultado2 = soma2();
+console.log(resultado2);
+
+
+// ● Executar uma função de soma enviando argumentos strings retornará uma concatenação.
+function soma3(x,y) {
+    return x + y;
+}
+
+const resultado3 = soma3('Erick', 'Ferreira');
+console.log(resultado3);
+
+
+// ● Função com valor padrão:
