@@ -15,9 +15,6 @@
         "sass": "clear ; sass --style expanded",
         "scss": "clear ; scss --style expanded"
     },
-	"liveServer.settings.CustomBrowser": "firefox",
-    "liveServer.settings.donotShowInfoMsg": true,
     "git.autofetch": true,
-    "workbench.colorTheme": "Dark Modern",
-    "explorer.confirmDragAndDrop": false
+    "workbench.colorTheme": "Dark Modern"
 }

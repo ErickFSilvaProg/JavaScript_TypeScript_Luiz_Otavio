@@ -27,6 +27,10 @@ const areYouAStudent = true;
 const studentPassed = true;
 
 
+/* 
+    Tipode dados não primitivos:
+*/
+
 // Tipo de dado passado por referência:
 const a = [1,2];
 const b = a;
