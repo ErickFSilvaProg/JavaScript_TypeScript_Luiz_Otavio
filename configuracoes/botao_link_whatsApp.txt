@@ -1,0 +1,13 @@
+Para adicionar um botão ou link do WhatsApp em uma página HTML5, basta utilizar a tag de âncora <a> com o link oficial https://wa.me/ seguido do seu número de telefone (com código do país e DDD).
+
+<a href="https://wa.me." target="_blank">
+  Fale conosco no WhatsApp
+</a>
+
+
+Como Personalizar
+
+• Número do Telefone: No campo 5541995266655, coloque 55 (Brasil), seguido do seu DDD e do número.
+• Mensagem Pré-definida: Use ?text= para definir um texto automático que aparecerá quando o cliente abrir a conversa (substitua os espaços por %20).
+• Nova Aba: O atributo target="_blank" faz com que a conversa abra em uma nova aba do navegador.
+• Botão Flutuante: Você pode estilizar o elemento usando CSS (com position: fixed; bottom: 20px; right: 20px;) para deixar o ícone sempre visível no canto da tela.

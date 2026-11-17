@@ -1,0 +1,23 @@
+{
+    "workbench.startupEditor": "none",
+    "workbench.iconTheme": "material-icon-theme",
+    "window.zoomLevel": 0,
+    "editor.fontSize": 14,
+    "editor.fontFamily": "Consolas",
+    "explorer.compactFolders": false,
+    "editor.wordWrap": "on",
+    "editor.minimap.enabled": false,
+    "code-runner.ignoreSelection": true,
+    "code-runner.runInTerminal": true,
+    "code-runner.executorMap": {
+        "javascript": "clear ; node",
+        "typescript": "clear ; ts-node",
+        "sass": "sass --style expanded",
+        "scss": "scss --style expanded",
+        "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css"
+    },
+    "git.autofetch": true,
+    "workbench.colorTheme": "Dark Modern",
+    "workbench.sideBar.location": "right",
+    "files.autoGuessEncoding": true
+}
